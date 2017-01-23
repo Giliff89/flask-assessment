@@ -1,0 +1,25 @@
+.instruction {
+    padding: 10px;
+    font-size: 20px;
+    border-style: groove;
+    border-color: #FA8072;
+    border-radius: 10px;
+}
+
+input[type="text"], textarea {
+
+  background-color : yellow; 
+
+}
+
+input[type="submit"] {
+
+  background-color : yellow; 
+
+}
+
+input[name="lastname"], textarea {
+
+  font-weight: bold; 
+
+}

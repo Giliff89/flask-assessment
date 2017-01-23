@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Application Form</title>
+  </head>
+  <body>
+
+    <h1>Ubermelon job application form</h1>
+
+    <p class="instruction">
+      Thank you for your interest in working for Ubermelon, please fill out the 
+      following form and we will contact you regarding your application shortly.
+    </p>
+
+    <form action="/application-success" method="POST">
+
+      First Name <input type="text" name="firstname"><br>
+
+      Last Name <input type="text" name="lastname"><br>
+
+      Salary Requirement <input type="text" name="salaryreq"><br>
+
+      <label for="jobrole">Which role are you applying for?</label>
+      <select name="job">
+
+      {% for job in job_list %}
+
+        <option value="{{ job }}">{{ job }}</option>
+
+      {% endfor %}
+
+      </select>
+
+      <br>
+
+      <input type="submit">
+
+    </form>
+  </body>
+</html>
